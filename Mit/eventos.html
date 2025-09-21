@@ -1,0 +1,218 @@
+
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Eventos | La Bonanza</title><link rel="stylesheet" href="style.css"><script src="script.js" defer></script></head><body>
+
+
+<header><img src="img/logo.png" alt="Logo" class="logo"><div><h2 style="margin:0;color:white">Pizzería</h2></div>
+<a href="https://www.instagram.com/mar_bonanza?utm_source=qr&igsh=MXFnd3E3ZjRqOTk3dQ==" target="_blank">
+  <img src="img/insta.png" alt="Instagram" class="logo-instagram">
+</a>
+
+<style>
+.logo-instagram {
+  
+  bottom: 70px;
+  right: 70px;        /* esquina inferior derecha */
+  width: 70px;        /* tamaño por defecto (pantallas grandes) */
+  
+  
+.logo-instagram:hover {
+  transform: scale(1.2);
+}
+
+/* 📱 Tamaño para celulares */
+@media (max-width: 300px) {
+  .logo-instagram {
+    width: 20px;   /* más pequeño en celular */
+  }
+}
+
+/* 💻 Tamaño para tablets */
+@media (min-width: 301px) and (max-width: 1024px) {
+  .logo-instagram {
+    width: 50px;   /* tamaño intermedio en tablet */
+  }
+}
+
+
+</style></style>
+</style></div>
+</header>
+
+
+<nav><a href="index.html">Inicio</a><a href="entradas.html">Entradas</a><a href="pizzas.html">Pizzas</a><a href="bebidas.html">Bebidas</a><a href="eventos.html">Catering</a></nav>
+<main>
+  <div class="welcome-text"> <h2><font color="white"></h2></font></div>
+<div class="welcome-text"><h3>Organiza tu evento con nosotros: menús de grupo, reservaciones y más</h3><p></p></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+
+
+
+    <h3><p style="margin-bottom:20px; line-height:1.5; font-size:16px;">
+    	<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrusel Responsive con Swipe</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Ajustar altura para móviles y PC */
+    .carousel-item img {
+      object-fit: cover;
+      height: 300px; /* altura en móviles */
+    }
+
+    @media (min-width: 768px) {
+      .carousel-item img {
+        height: 500px; /* altura en pantallas grandes */
+      }
+    }
+
+    /* Flechas siempre visibles y personalizadas */
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<div id="carruselFotos" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000" data-bs-touch="true">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/foto1.jpg" class="d-block w-100" alt="Foto 1">
+    </div>
+    
+
+    <div class="carousel-item">
+      <img src="img/foto2.jpg" class="d-block w-100" alt="Foto 2">
+    </div>
+
+
+     <div class="carousel-item">
+      <img src="img/foto3.jpg" class="d-block w-100" alt="Foto 3">
+    </div>
+
+     <div class="carousel-item">
+      <img src="img/foto4.jpg" class="d-block w-100" alt="Foto 4">
+    </div>
+
+     <div class="carousel-item">
+      <img src="img/foto5.jpg" class="d-block w-100" alt="Foto 5">
+    </div>
+
+     <div class="carousel-item">
+      <img src="img/foto6.jpg" class="d-block w-100" alt="Foto 6">
+    </div>
+
+     <div class="carousel-item">
+      <img src="img/foto7.jpg" class="d-block w-100" alt="Foto 7">
+    </div>
+
+     <div class="carousel-item">
+      <img src="img/foto8.jpg" class="d-block w-100" alt="Foto 8">
+    </div>
+
+     <div class="carousel-item">
+      <img src="img/foto9.jpg" class="d-block w-100" alt="Foto 9">
+ 
+
+
+  </div>
+
+  <!-- Botones de control -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carruselFotos" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carruselFotos" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<!-- Bootstrap 5 JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  // Habilitar swipe manualmente en móviles (por si el navegador no lo activa)
+  const myCarousel = document.querySelector('#carruselFotos');
+  const carousel = new bootstrap.Carousel(myCarousel);
+
+  let startX = 0;
+  myCarousel.addEventListener('touchstart', e => {
+    startX = e.touches[0].clientX;
+  });
+
+  myCarousel.addEventListener('touchend', e => {
+    let endX = e.changedTouches[0].clientX;
+    if (startX - endX > 50) {
+      carousel.next(); // swipe izquierda → siguiente
+    } else if (endX - startX > 50) {
+      carousel.prev(); // swipe derecha → anterior
+    }
+  });
+</script>
+
+</body>
+
+
+  <section class="hero">
+  	<footer><h2></h2>
+
+
+
+
+    Calle Amado Nervo 14-MZ 016,<br>
+    San Miguel, 52740 Ocoyoacac, Méx
+  </p></h3>
+
+
+  <!-- Botones juntos -->
+  <div style="display:flex; justify-content:center; gap:5px; flex-wrap:wrap; margin-bottom:5px;">
+    <!-- Botón ladrillo -->
+    <a href="https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=Calle+Amado+Nervo+14-MZ+016,+San+Miguel,+52740+Ocoyoacac,+Méx" 
+       target="_blank" 
+       style="display:inline-block; padding:10px 18px; background:#b22222; color:#fff; 
+              font-size:15px; font-weight:bold; border-radius:15px; text-decoration:none;">
+      Cómo llegar
+    </a>
+
+    <!-- Botón grande de WhatsApp -->
+    <a href="https://wa.me/5217222675873?text=Hola%20quiero%20más%20información%20sobre%20su%20pizzería" target="_blank" 
+       style="display:inline-flex; align-items:center; justify-content:center; gap:10px;
+              padding:10px 18px; background:#25d366; color:#fff; font-size:15px; font-weight:bold; 
+              border-radius:8px; text-decoration:none;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+           alt="WhatsApp" 
+           style="width:24px; height:24px;">
+      WhatsApp
+    </a>
+  </div>
+
+  <!-- Números con logo de WhatsApp -->
+ 
+    </p>
+    <p style="margin:8px 0; font-size:16px;">
+      <a href="https://wa.me/5217222290128" target="_blank" style="text-decoration:none; color:#25d366; font-weight:bold;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+             alt="WhatsApp" 
+             style="width:20px; height:20px; vertical-align:middle; margin-right:6px;">
+        722 229 0128
+      </a>
+    </p>
+  </div>
